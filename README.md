@@ -69,7 +69,8 @@ Dependencies: Only standard libraries (socket, threading, json, tkinter, logging
 
 Tkinter must be installed (default with Python, but on Linux systems you may need sudo apt install python3-tk).
 
-Authors
+Authors:
+
 Seçil Gezer 29145
 
 Elif Sude Meydan 29184
