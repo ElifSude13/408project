@@ -3,6 +3,8 @@ from tkinter import ttk
 import threading
 import socket
 import json
+import time
+
 
 DRONE_PORT = 5000
 CENTRAL_SERVER_IP = "127.0.0.1"
