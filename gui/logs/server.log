@@ -1,0 +1,68 @@
+2025-04-29 20:42:18,124 - INFO - Central Server listening on port 6000
+2025-04-29 20:42:57,806 - INFO - Drone connected from ('127.0.0.1', 61784)
+2025-04-29 20:42:57,807 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.33, 'humidity': 46.65, 'timestamp': '2025-04-29T17:42:53.836839Z'}
+2025-04-29 20:42:57,810 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.62, 'timestamp': '2025-04-29T17:42:55.837573Z'}
+2025-04-29 20:43:02,812 - INFO - Drone connected from ('127.0.0.1', 61786)
+2025-04-29 20:43:02,813 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.61, 'timestamp': '2025-04-29T17:42:57.838526Z'}
+2025-04-29 20:43:02,833 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.6, 'timestamp': '2025-04-29T17:42:59.839704Z'}
+2025-04-29 20:43:02,840 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.59, 'timestamp': '2025-04-29T17:43:01.840992Z'}
+2025-04-29 20:43:07,814 - INFO - Drone connected from ('127.0.0.1', 61788)
+2025-04-29 20:43:07,815 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.56, 'timestamp': '2025-04-29T17:43:03.844136Z'}
+2025-04-29 20:43:07,815 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:05.844660Z'}
+2025-04-29 20:43:12,815 - INFO - Drone connected from ('127.0.0.1', 61790)
+2025-04-29 20:43:12,816 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:07.845301Z'}
+2025-04-29 20:43:12,822 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.54, 'timestamp': '2025-04-29T17:43:09.846056Z'}
+2025-04-29 20:43:12,831 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.53, 'timestamp': '2025-04-29T17:43:11.846716Z'}
+2025-04-29 20:43:17,816 - INFO - Drone connected from ('127.0.0.1', 61792)
+2025-04-29 20:43:17,818 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.52, 'timestamp': '2025-04-29T17:43:13.848089Z'}
+2025-04-29 20:43:17,837 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:15.848851Z'}
+2025-04-29 20:43:22,818 - INFO - Drone connected from ('127.0.0.1', 61794)
+2025-04-29 20:43:22,821 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:17.849479Z'}
+2025-04-29 20:43:22,840 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.5, 'timestamp': '2025-04-29T17:43:19.850314Z'}
+2025-04-29 20:43:22,853 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:21.850880Z'}
+2025-04-29 20:43:27,822 - INFO - Drone connected from ('127.0.0.1', 61797)
+2025-04-29 20:43:27,822 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:23.851326Z'}
+2025-04-29 20:43:27,831 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.48, 'timestamp': '2025-04-29T17:43:25.852282Z'}
+2025-04-29 20:43:27,848 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 21.02, 'humidity': 52.04, 'timestamp': '2025-04-29T17:43:27.298321Z'}
+2025-04-29 20:43:32,824 - INFO - Drone connected from ('127.0.0.1', 61800)
+2025-04-29 20:43:32,829 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.47, 'timestamp': '2025-04-29T17:43:27.853027Z'}
+2025-04-29 20:43:32,847 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 21.01, 'humidity': 52.01, 'timestamp': '2025-04-29T17:43:29.298894Z'}
+2025-04-29 20:43:32,853 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.23, 'humidity': 46.46, 'timestamp': '2025-04-29T17:43:29.853979Z'}
+2025-04-29 20:43:32,858 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:31.299611Z'}
+2025-04-29 20:43:32,867 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.45, 'timestamp': '2025-04-29T17:43:31.855313Z'}
+2025-04-29 20:43:37,833 - INFO - Drone connected from ('127.0.0.1', 61802)
+2025-04-29 20:43:37,837 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:33.300345Z'}
+2025-04-29 20:43:37,859 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.44, 'timestamp': '2025-04-29T17:43:33.855889Z'}
+2025-04-29 20:43:37,955 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 51.99, 'timestamp': '2025-04-29T17:43:35.300956Z'}
+2025-04-29 20:43:37,969 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.43, 'timestamp': '2025-04-29T17:43:35.857363Z'}
+2025-04-29 20:43:37,981 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.99, 'humidity': 51.97, 'timestamp': '2025-04-29T17:43:37.302701Z'}
+2025-04-29 20:43:42,842 - INFO - Drone connected from ('127.0.0.1', 61804)
+2025-04-29 20:43:42,843 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.42, 'timestamp': '2025-04-29T17:43:37.858429Z'}
+2025-04-29 20:43:42,864 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.98, 'humidity': 51.96, 'timestamp': '2025-04-29T17:43:39.304510Z'}
+2025-04-29 20:43:42,865 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.4, 'timestamp': '2025-04-29T17:43:39.859729Z'}
+2025-04-29 20:43:42,865 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.95, 'timestamp': '2025-04-29T17:43:41.305410Z'}
+2025-04-29 20:43:42,876 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.39, 'timestamp': '2025-04-29T17:43:41.860722Z'}
+2025-04-29 20:43:47,846 - INFO - Drone connected from ('127.0.0.1', 61806)
+2025-04-29 20:43:47,850 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.94, 'timestamp': '2025-04-29T17:43:43.306124Z'}
+2025-04-29 20:43:47,886 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:43.861519Z'}
+2025-04-29 20:43:47,887 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.93, 'timestamp': '2025-04-29T17:43:45.306839Z'}
+2025-04-29 20:43:47,888 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:45.862039Z'}
+2025-04-29 20:43:47,888 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:47.307567Z'}
+2025-04-29 20:43:52,855 - INFO - Drone connected from ('127.0.0.1', 61808)
+2025-04-29 20:43:52,855 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:47.862750Z'}
+2025-04-29 20:43:52,863 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:49.308052Z'}
+2025-04-29 20:43:52,864 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:49.863176Z'}
+2025-04-29 20:43:52,864 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:51.308635Z'}
+2025-04-29 20:43:52,877 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:51.863681Z'}
+2025-04-29 20:43:57,857 - INFO - Drone connected from ('127.0.0.1', 61810)
+2025-04-29 20:43:57,858 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:53.309193Z'}
+2025-04-29 20:43:57,859 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:53.864454Z'}
+2025-04-29 20:43:57,905 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.9, 'timestamp': '2025-04-29T17:43:55.310184Z'}
+2025-04-29 20:43:57,923 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.33, 'timestamp': '2025-04-29T17:43:55.867442Z'}
+2025-04-29 20:43:57,933 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.89, 'timestamp': '2025-04-29T17:43:57.310712Z'}
+2025-04-29 20:44:02,860 - INFO - Drone connected from ('127.0.0.1', 61812)
+2025-04-29 20:44:02,861 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.32, 'timestamp': '2025-04-29T17:43:57.867995Z'}
+2025-04-29 20:44:02,876 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.94, 'humidity': 51.87, 'timestamp': '2025-04-29T17:43:59.312581Z'}
+2025-04-29 20:44:02,882 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.31, 'timestamp': '2025-04-29T17:43:59.869060Z'}
+2025-04-29 20:44:02,886 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 20.93, 'humidity': 51.87, 'timestamp': '2025-04-29T17:44:01.313259Z'}
+2025-04-29 20:44:02,891 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.3, 'timestamp': '2025-04-29T17:44:01.869650Z'}

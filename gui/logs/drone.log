@@ -1,0 +1,113 @@
+2025-04-29 20:42:37,794 - INFO - Drone listening for sensors on port 5000
+2025-04-29 20:42:53,835 - INFO - Sensor connected from ('127.0.0.1', 61782)
+2025-04-29 20:42:53,837 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.33, 'humidity': 46.65, 'timestamp': '2025-04-29T17:42:53.836839Z'}
+2025-04-29 20:42:55,838 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.62, 'timestamp': '2025-04-29T17:42:55.837573Z'}
+2025-04-29 20:42:57,805 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.33, 'humidity': 46.65, 'timestamp': '2025-04-29T17:42:53.836839Z'}
+2025-04-29 20:42:57,806 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.62, 'timestamp': '2025-04-29T17:42:55.837573Z'}
+2025-04-29 20:42:57,839 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.61, 'timestamp': '2025-04-29T17:42:57.838526Z'}
+2025-04-29 20:42:59,841 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.6, 'timestamp': '2025-04-29T17:42:59.839704Z'}
+2025-04-29 20:43:01,841 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.59, 'timestamp': '2025-04-29T17:43:01.840992Z'}
+2025-04-29 20:43:02,811 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.31, 'humidity': 46.61, 'timestamp': '2025-04-29T17:42:57.838526Z'}
+2025-04-29 20:43:02,812 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.6, 'timestamp': '2025-04-29T17:42:59.839704Z'}
+2025-04-29 20:43:02,812 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.3, 'humidity': 46.59, 'timestamp': '2025-04-29T17:43:01.840992Z'}
+2025-04-29 20:43:03,844 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.56, 'timestamp': '2025-04-29T17:43:03.844136Z'}
+2025-04-29 20:43:05,845 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:05.844660Z'}
+2025-04-29 20:43:07,813 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.56, 'timestamp': '2025-04-29T17:43:03.844136Z'}
+2025-04-29 20:43:07,814 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.28, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:05.844660Z'}
+2025-04-29 20:43:07,845 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:07.845301Z'}
+2025-04-29 20:43:09,846 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.54, 'timestamp': '2025-04-29T17:43:09.846056Z'}
+2025-04-29 20:43:11,848 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.53, 'timestamp': '2025-04-29T17:43:11.846716Z'}
+2025-04-29 20:43:12,815 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.55, 'timestamp': '2025-04-29T17:43:07.845301Z'}
+2025-04-29 20:43:12,815 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.54, 'timestamp': '2025-04-29T17:43:09.846056Z'}
+2025-04-29 20:43:12,815 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.27, 'humidity': 46.53, 'timestamp': '2025-04-29T17:43:11.846716Z'}
+2025-04-29 20:43:13,848 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.52, 'timestamp': '2025-04-29T17:43:13.848089Z'}
+2025-04-29 20:43:15,849 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:15.848851Z'}
+2025-04-29 20:43:17,816 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.52, 'timestamp': '2025-04-29T17:43:13.848089Z'}
+2025-04-29 20:43:17,816 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.26, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:15.848851Z'}
+2025-04-29 20:43:17,849 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:17.849479Z'}
+2025-04-29 20:43:19,850 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.5, 'timestamp': '2025-04-29T17:43:19.850314Z'}
+2025-04-29 20:43:21,851 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:21.850880Z'}
+2025-04-29 20:43:22,818 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.51, 'timestamp': '2025-04-29T17:43:17.849479Z'}
+2025-04-29 20:43:22,819 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.5, 'timestamp': '2025-04-29T17:43:19.850314Z'}
+2025-04-29 20:43:22,819 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.25, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:21.850880Z'}
+2025-04-29 20:43:23,851 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:23.851326Z'}
+2025-04-29 20:43:25,852 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.48, 'timestamp': '2025-04-29T17:43:25.852282Z'}
+2025-04-29 20:43:27,296 - INFO - Sensor connected from ('127.0.0.1', 61796)
+2025-04-29 20:43:27,298 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 21.02, 'humidity': 52.04, 'timestamp': '2025-04-29T17:43:27.298321Z'}
+2025-04-29 20:43:27,822 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.49, 'timestamp': '2025-04-29T17:43:23.851326Z'}
+2025-04-29 20:43:27,822 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.48, 'timestamp': '2025-04-29T17:43:25.852282Z'}
+2025-04-29 20:43:27,822 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 21.02, 'humidity': 52.04, 'timestamp': '2025-04-29T17:43:27.298321Z'}
+2025-04-29 20:43:27,853 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.47, 'timestamp': '2025-04-29T17:43:27.853027Z'}
+2025-04-29 20:43:29,299 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 21.01, 'humidity': 52.01, 'timestamp': '2025-04-29T17:43:29.298894Z'}
+2025-04-29 20:43:29,854 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.23, 'humidity': 46.46, 'timestamp': '2025-04-29T17:43:29.853979Z'}
+2025-04-29 20:43:31,300 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:31.299611Z'}
+2025-04-29 20:43:31,855 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.45, 'timestamp': '2025-04-29T17:43:31.855313Z'}
+2025-04-29 20:43:32,823 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.24, 'humidity': 46.47, 'timestamp': '2025-04-29T17:43:27.853027Z'}
+2025-04-29 20:43:32,824 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 21.01, 'humidity': 52.01, 'timestamp': '2025-04-29T17:43:29.298894Z'}
+2025-04-29 20:43:32,825 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.23, 'humidity': 46.46, 'timestamp': '2025-04-29T17:43:29.853979Z'}
+2025-04-29 20:43:32,825 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:31.299611Z'}
+2025-04-29 20:43:32,830 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.45, 'timestamp': '2025-04-29T17:43:31.855313Z'}
+2025-04-29 20:43:33,301 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:33.300345Z'}
+2025-04-29 20:43:33,857 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.44, 'timestamp': '2025-04-29T17:43:33.855889Z'}
+2025-04-29 20:43:35,301 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 51.99, 'timestamp': '2025-04-29T17:43:35.300956Z'}
+2025-04-29 20:43:35,857 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.43, 'timestamp': '2025-04-29T17:43:35.857363Z'}
+2025-04-29 20:43:37,303 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.99, 'humidity': 51.97, 'timestamp': '2025-04-29T17:43:37.302701Z'}
+2025-04-29 20:43:37,832 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 52.0, 'timestamp': '2025-04-29T17:43:33.300345Z'}
+2025-04-29 20:43:37,833 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.22, 'humidity': 46.44, 'timestamp': '2025-04-29T17:43:33.855889Z'}
+2025-04-29 20:43:37,833 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 21.0, 'humidity': 51.99, 'timestamp': '2025-04-29T17:43:35.300956Z'}
+2025-04-29 20:43:37,835 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.43, 'timestamp': '2025-04-29T17:43:35.857363Z'}
+2025-04-29 20:43:37,838 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.99, 'humidity': 51.97, 'timestamp': '2025-04-29T17:43:37.302701Z'}
+2025-04-29 20:43:37,859 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.42, 'timestamp': '2025-04-29T17:43:37.858429Z'}
+2025-04-29 20:43:39,304 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.98, 'humidity': 51.96, 'timestamp': '2025-04-29T17:43:39.304510Z'}
+2025-04-29 20:43:39,860 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.4, 'timestamp': '2025-04-29T17:43:39.859729Z'}
+2025-04-29 20:43:41,306 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.95, 'timestamp': '2025-04-29T17:43:41.305410Z'}
+2025-04-29 20:43:41,861 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.39, 'timestamp': '2025-04-29T17:43:41.860722Z'}
+2025-04-29 20:43:42,842 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.21, 'humidity': 46.42, 'timestamp': '2025-04-29T17:43:37.858429Z'}
+2025-04-29 20:43:42,843 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.98, 'humidity': 51.96, 'timestamp': '2025-04-29T17:43:39.304510Z'}
+2025-04-29 20:43:42,843 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.4, 'timestamp': '2025-04-29T17:43:39.859729Z'}
+2025-04-29 20:43:42,843 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.95, 'timestamp': '2025-04-29T17:43:41.305410Z'}
+2025-04-29 20:43:42,844 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.2, 'humidity': 46.39, 'timestamp': '2025-04-29T17:43:41.860722Z'}
+2025-04-29 20:43:43,306 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.94, 'timestamp': '2025-04-29T17:43:43.306124Z'}
+2025-04-29 20:43:43,861 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:43.861519Z'}
+2025-04-29 20:43:45,307 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.93, 'timestamp': '2025-04-29T17:43:45.306839Z'}
+2025-04-29 20:43:45,862 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:45.862039Z'}
+2025-04-29 20:43:47,307 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:47.307567Z'}
+2025-04-29 20:43:47,845 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.94, 'timestamp': '2025-04-29T17:43:43.306124Z'}
+2025-04-29 20:43:47,846 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:43.861519Z'}
+2025-04-29 20:43:47,848 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.97, 'humidity': 51.93, 'timestamp': '2025-04-29T17:43:45.306839Z'}
+2025-04-29 20:43:47,852 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.38, 'timestamp': '2025-04-29T17:43:45.862039Z'}
+2025-04-29 20:43:47,853 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:47.307567Z'}
+2025-04-29 20:43:47,864 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:47.862750Z'}
+2025-04-29 20:43:49,308 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:49.308052Z'}
+2025-04-29 20:43:49,863 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:49.863176Z'}
+2025-04-29 20:43:51,308 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:51.308635Z'}
+2025-04-29 20:43:51,863 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:51.863681Z'}
+2025-04-29 20:43:52,855 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.19, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:47.862750Z'}
+2025-04-29 20:43:52,855 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.92, 'timestamp': '2025-04-29T17:43:49.308052Z'}
+2025-04-29 20:43:52,855 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.37, 'timestamp': '2025-04-29T17:43:49.863176Z'}
+2025-04-29 20:43:52,855 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.96, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:51.308635Z'}
+2025-04-29 20:43:52,856 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:51.863681Z'}
+2025-04-29 20:43:53,309 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:53.309193Z'}
+2025-04-29 20:43:53,866 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:53.864454Z'}
+2025-04-29 20:43:55,310 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.9, 'timestamp': '2025-04-29T17:43:55.310184Z'}
+2025-04-29 20:43:55,867 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.33, 'timestamp': '2025-04-29T17:43:55.867442Z'}
+2025-04-29 20:43:57,311 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.89, 'timestamp': '2025-04-29T17:43:57.310712Z'}
+2025-04-29 20:43:57,857 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.91, 'timestamp': '2025-04-29T17:43:53.309193Z'}
+2025-04-29 20:43:57,857 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.18, 'humidity': 46.36, 'timestamp': '2025-04-29T17:43:53.864454Z'}
+2025-04-29 20:43:57,858 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.9, 'timestamp': '2025-04-29T17:43:55.310184Z'}
+2025-04-29 20:43:57,858 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.33, 'timestamp': '2025-04-29T17:43:55.867442Z'}
+2025-04-29 20:43:57,859 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.95, 'humidity': 51.89, 'timestamp': '2025-04-29T17:43:57.310712Z'}
+2025-04-29 20:43:57,868 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.32, 'timestamp': '2025-04-29T17:43:57.867995Z'}
+2025-04-29 20:43:59,312 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.94, 'humidity': 51.87, 'timestamp': '2025-04-29T17:43:59.312581Z'}
+2025-04-29 20:43:59,869 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.31, 'timestamp': '2025-04-29T17:43:59.869060Z'}
+2025-04-29 20:44:01,313 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.93, 'humidity': 51.87, 'timestamp': '2025-04-29T17:44:01.313259Z'}
+2025-04-29 20:44:01,870 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.3, 'timestamp': '2025-04-29T17:44:01.869650Z'}
+2025-04-29 20:44:02,860 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.16, 'humidity': 46.32, 'timestamp': '2025-04-29T17:43:57.867995Z'}
+2025-04-29 20:44:02,860 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.94, 'humidity': 51.87, 'timestamp': '2025-04-29T17:43:59.312581Z'}
+2025-04-29 20:44:02,861 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.31, 'timestamp': '2025-04-29T17:43:59.869060Z'}
+2025-04-29 20:44:02,864 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor2', 'temperature': 20.93, 'humidity': 51.87, 'timestamp': '2025-04-29T17:44:01.313259Z'}
+2025-04-29 20:44:02,865 - INFO - Forwarded to Central Server: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.3, 'timestamp': '2025-04-29T17:44:01.869650Z'}
+2025-04-29 20:44:03,314 - INFO - Received data: {'sensor_id': 'sensor2', 'temperature': 20.93, 'humidity': 51.86, 'timestamp': '2025-04-29T17:44:03.314166Z'}
+2025-04-29 20:44:03,833 - ERROR - Connection error with sensor ('127.0.0.1', 61796): [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
+2025-04-29 20:44:03,870 - INFO - Received data: {'sensor_id': 'sensor1', 'temperature': 18.15, 'humidity': 46.3, 'timestamp': '2025-04-29T17:44:03.870390Z'}
+2025-04-29 20:44:04,211 - ERROR - Connection error with sensor ('127.0.0.1', 61782): [WinError 10054] Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý
