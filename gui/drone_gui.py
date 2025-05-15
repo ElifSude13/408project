@@ -52,7 +52,43 @@ class DroneGUI:
         threading.Thread(target=self.forward_to_central, daemon=True).start()
     
         # Batarya tüketim döngüsü thread'i
-        threading.Thread(target=self.battery_drain_loop, daemon=True).start()
+        threading.Thread(target=self.battery_drain_loop, daemon=True).start
+
+     def battery_drain_loop(self):
+        while True:
+            time.sleep(5)
+            self.battery_level -= 1.0
+            if self.battery_level < 0:
+                self.battery_level = 0
+            self.root.after(0, self.update_battery_label)
+
+            if self.battery_level < 20.0 and not self.returning_to_base:
+                self.returning_to_base = True
+                logging.warning("Battery low! Returning to base.")
+                self.root.after(0, lambda: self.status_label.config(text="Status: Returning to Base", fg="red"))
+
+            elif self.battery_level >= 90.0 and self.returning_to_base:
+                self.returning_to_base = False
+                logging.info("Battery restored! Resuming normal operation.")
+                self.root.after(0, lambda: self.status_label.config(text="Status: Normal", fg="green"))
+                # Flush queued data
+                self.flush_queued_data
+
+    def flush_queued_data(self):
+        try:
+            with socket.create_connection((CENTRAL_SERVER_IP, CENTRAL_SERVER_PORT)) as central_sock:
+                for data in self.queued_data:
+                    central_sock.sendall(json.dumps(data).encode() + b"\n")
+                    logging.info(f"[QUEUE-FLUSH] Sent: {data}")
+                self.queued_data.clear()
+        except Exception as e:
+            logging.error(f"Flush failed: {e}")
+
+
+    
+    def update_battery_label(self):
+        self.battery_label.config(text=f"Battery: {self.battery_level:.1f}%")
+
 
     def start_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
@@ -89,14 +125,19 @@ class DroneGUI:
     def forward_to_central(self):
         while True:
             if sensor_data_buffer:
-                try:
-                    with socket.create_connection((CENTRAL_SERVER_IP, CENTRAL_SERVER_PORT)) as central_sock:
-                        for data in sensor_data_buffer:
-                            central_sock.sendall(json.dumps(data).encode() + b"\n")
-                            logging.info(f"Forwarded to Central Server: {data}")
-                        sensor_data_buffer.clear()
-                except Exception as e:
-                    logging.error(f"Could not connect to Central Server: {e}")
+                if self.returning_to_base:
+                    self.queued_data.extend(sensor_data_buffer)
+                    logging.warning(f"[QUEUE] Queued {len(sensor_data_buffer)} items during low battery.")
+                    sensor_data_buffer.clear()
+                else:
+                    try:
+                        with socket.create_connection((CENTRAL_SERVER_IP, CENTRAL_SERVER_PORT)) as central_sock:
+                            for data in sensor_data_buffer:
+                                central_sock.sendall(json.dumps(data).encode() + b"\n")
+                                logging.info(f"Forwarded to Central Server: {data}")
+                            sensor_data_buffer.clear()
+                    except Exception as e:
+                        logging.error(f"Could not connect to Central Server: {e}")
             time.sleep(5)
 
 if __name__ == "__main__":
