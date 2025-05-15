@@ -1,0 +1,7 @@
+2025-05-15 21:44:50,603 - INFO - Connected to Drone at 127.0.0.1:5000
+2025-05-15 21:44:50,605 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:50.605855Z'}
+2025-05-15 21:44:52,606 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:52.606363Z'}
+2025-05-15 21:44:54,607 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:54.606878Z'}
+2025-05-15 21:44:56,607 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:56.607782Z'}
+2025-05-15 21:44:58,608 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:58.608715Z'}
+2025-05-15 21:45:00,611 - INFO - Sent: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:00.610998Z'}

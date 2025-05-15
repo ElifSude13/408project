@@ -43,7 +43,7 @@ class ServerGUI:
 
         threading.Thread(target=self.start_server, daemon=True).start()
 
-    def start_server(self):
+     def start_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
             server_socket.bind(("", CENTRAL_PORT))
             server_socket.listen()
@@ -52,7 +52,7 @@ class ServerGUI:
                 conn, addr = server_socket.accept()
                 threading.Thread(target=self.handle_drone, args=(conn, addr), daemon=True).start()
 
-    def handle_drone(self, conn, addr):
+     def handle_drone(self, conn, addr):
         with conn:
             logging.info(f"Drone connected from {addr}")
             buffer = b""
@@ -71,7 +71,7 @@ class ServerGUI:
                     logging.error(f"Connection error with Drone: {e}")
                     break
 
-    def update_gui(self, data):
+     def update_gui(self, data):
         tag = "anomaly" if "anomaly" in data else ""
 
         self.tree.insert("", tk.END, values=(

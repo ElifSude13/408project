@@ -80,7 +80,7 @@ class DroneGUI:
         return anomalies  # Liste döndürür
 
 
-     def battery_drain_loop(self):
+    def battery_drain_loop(self):
         while True:
             time.sleep(5)
             self.battery_level -= 1.0
@@ -133,12 +133,19 @@ class DroneGUI:
                 try:
                     chunk = conn.recv(1024)
                     if not chunk:
-                        break
+                        raise ConnectionResetError("Sensor disconnected cleanly.")
                     buffer += chunk
                     while b"\n" in buffer:
                         line, buffer = buffer.split(b"\n", 1)
+
+                        # Battery check
+                        if self.battery_level <= 0:
+                            logging.warning("Battery depleted. Dropping incoming data.")
+                            continue
+
                         data = json.loads(line.decode())
                         self.root.after(0, self.update_gui, data)
+
                         # anomaly detection
                         anomalies = self.is_anomaly(data)
                         if anomalies:
@@ -146,14 +153,14 @@ class DroneGUI:
                                 msg = f"[ANOMALY] {data['sensor_id']} - {a}"
                                 self.root.after(0, self.anomaly_listbox.insert, tk.END, msg)
                                 logging.warning(msg)
-                            # anomaly'li veri normal veri gibi gönderilecek ama ayrıca işaretlenecek
                             data["anomaly"] = anomalies
-                        
+
                         sensor_data_buffer.append(data)
                         logging.info(f"Received data: {data}")
-
                 except Exception as e:
-                    logging.error(f"Connection error with sensor {addr}: {e}")
+                    msg = f"[DISCONNECT] Sensor at {addr} disconnected: {e}"
+                    self.root.after(0, self.anomaly_listbox.insert, tk.END, msg)
+                    logging.warning(msg)
                     break
 
     def update_gui(self, data):

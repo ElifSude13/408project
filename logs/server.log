@@ -1,0 +1,67 @@
+2025-05-15 21:44:47,392 - INFO - Central Server listening on port 6000
+2025-05-15 21:44:53,465 - INFO - Drone connected from ('127.0.0.1', 51427)
+2025-05-15 21:44:53,466 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:50.605855Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:53,466 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:53,466 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:44:53,468 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:51.634363Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:53,468 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:53,472 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:44:53,474 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:52.606363Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:53,474 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:53,475 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:44:58,467 - INFO - Drone connected from ('127.0.0.1', 51429)
+2025-05-15 21:44:58,468 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:53.635030Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:58,468 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:58,468 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:44:58,472 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:54.606878Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:58,472 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:58,472 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:44:58,473 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:55.636414Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:58,473 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:58,473 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:44:58,478 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:56.607782Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:58,478 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:58,479 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:44:58,484 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:57.637747Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:44:58,484 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:44:58,484 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:03,469 - INFO - Drone connected from ('127.0.0.1', 51431)
+2025-05-15 21:45:03,469 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:58.608715Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:03,470 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:03,470 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:45:03,474 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:44:59.638665Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:03,474 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:03,475 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:03,479 - WARNING - [ANOMALY] sensor1 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:03,480 - INFO - Received data from Drone: {'sensor_id': 'sensor1', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:00.610998Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:03,480 - WARNING - [ANOMALY] sensor1 - Humidity anomaly: 95%
+2025-05-15 21:45:03,485 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:01.642002Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:03,485 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:03,485 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:08,472 - INFO - Drone connected from ('127.0.0.1', 51433)
+2025-05-15 21:45:08,473 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:03.642979Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:08,473 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:08,474 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:08,482 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:05.644113Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:08,483 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:08,483 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:08,489 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:07.646261Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:08,489 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:08,490 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:13,475 - INFO - Drone connected from ('127.0.0.1', 51435)
+2025-05-15 21:45:13,476 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:09.647660Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:13,476 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:13,477 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:13,488 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:13,488 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:11.648615Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:13,488 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:18,476 - INFO - Drone connected from ('127.0.0.1', 51437)
+2025-05-15 21:45:18,477 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:13.649441Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:18,477 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:18,477 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:18,477 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:18,478 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:15.650636Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:18,478 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%
+2025-05-15 21:45:18,478 - INFO - Received data from Drone: {'sensor_id': 'sensor2', 'temperature': 100.0, 'humidity': 95, 'timestamp': '2025-05-15T18:45:17.651823Z', 'anomaly': ['Temperature anomaly: 100.0°C', 'Humidity anomaly: 95%']}
+2025-05-15 21:45:18,478 - WARNING - [ANOMALY] sensor2 - Temperature anomaly: 100.0°C
+2025-05-15 21:45:18,479 - WARNING - [ANOMALY] sensor2 - Humidity anomaly: 95%

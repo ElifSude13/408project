@@ -3,7 +3,7 @@ import json
 import time
 import argparse
 import logging
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import os
 
 # Log ayarları
@@ -26,13 +26,27 @@ formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
+#anomaly sensor
 def get_sensor_data(sensor_id):
+    turkey_tz = timezone(timedelta(hours=3))
     return {
         "sensor_id": sensor_id,
-        "temperature": round(20 + 5 * (0.5 - time.time() % 1), 2),
-        "humidity": round(50 + 10 * (0.5 - time.time() % 1), 2),
-        "timestamp": datetime.utcnow().isoformat() + "Z"
+        "temperature": 100.0,  # veya random değer
+        "humidity": 85.0,
+        "timestamp": datetime.now(turkey_tz).isoformat()
     }
+"""
+
+#normal sensor
+def get_sensor_data(sensor_id):
+    turkey_tz = timezone(timedelta(hours=3))
+    return {
+        "sensor_id": sensor_id,
+        "temperature": round(20 + 5 * (0.5 - time.time() % 1), 2),  # veya random değer
+        "humidity": round(50 + 10 * (0.5 - time.time() % 1), 2),
+        "timestamp": datetime.now(turkey_tz).isoformat()
+    }
+"""
 
 def main():
     while True:
