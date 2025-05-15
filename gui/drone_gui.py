@@ -31,15 +31,17 @@ class DroneGUI:
         self.root = root
         self.root.title("Drone Dashboard")
     
+        # Setup the treeview to display sensor data
         self.tree = ttk.Treeview(root, columns=("Sensor ID", "Temperature", "Humidity", "Timestamp"), show="headings")
         for col in ("Sensor ID", "Temperature", "Humidity", "Timestamp"):
             self.tree.heading(col, text=col)
         self.tree.pack(fill=tk.BOTH, expand=True)
     
+        # Status label showing normal or error status
         self.status_label = tk.Label(root, text="Status: Normal", fg="green")
         self.status_label.pack()
     
-        # Batarya ile ilgili değişkenler ve label
+        # Battery-related variables and label
         self.battery_level = 100.0
         self.returning_to_base = False
         self.queued_data = []
@@ -47,12 +49,36 @@ class DroneGUI:
         self.battery_label = tk.Label(root, text=f"Battery: {self.battery_level:.1f}%", fg="blue")
         self.battery_label.pack()
     
-        # Sunucu ve forward threadleri
+        # Label and listbox for showing detected anomalies
+        self.anomaly_list_label = tk.Label(root, text="Anomalies", fg="darkred")
+        self.anomaly_list_label.pack()
+    
+        self.anomaly_listbox = tk.Listbox(root, height=6)
+        self.anomaly_listbox.pack(fill=tk.BOTH, expand=True)
+    
+        # Start server and forwarding threads as daemons
         threading.Thread(target=self.start_server, daemon=True).start()
         threading.Thread(target=self.forward_to_central, daemon=True).start()
     
-        # Batarya tüketim döngüsü thread'i
-        threading.Thread(target=self.battery_drain_loop, daemon=True).start
+        # Start battery drain loop in a separate thread
+        threading.Thread(target=self.battery_drain_loop, daemon=True).start()
+
+
+    def is_anomaly(self, data):
+        temp = data.get("temperature")
+        hum = data.get("humidity")
+        anomalies = []
+
+        if temp is not None:
+            if temp > 60.0 or temp < -10.0:
+                anomalies.append(f"Temperature anomaly: {temp}°C")
+
+        if hum is not None:
+            if hum > 90.0 or hum < 10.0:
+                anomalies.append(f"Humidity anomaly: {hum}%")
+
+        return anomalies  # Liste döndürür
+
 
      def battery_drain_loop(self):
         while True:
@@ -113,8 +139,19 @@ class DroneGUI:
                         line, buffer = buffer.split(b"\n", 1)
                         data = json.loads(line.decode())
                         self.root.after(0, self.update_gui, data)
+                        # anomaly detection
+                        anomalies = self.is_anomaly(data)
+                        if anomalies:
+                            for a in anomalies:
+                                msg = f"[ANOMALY] {data['sensor_id']} - {a}"
+                                self.root.after(0, self.anomaly_listbox.insert, tk.END, msg)
+                                logging.warning(msg)
+                            # anomaly'li veri normal veri gibi gönderilecek ama ayrıca işaretlenecek
+                            data["anomaly"] = anomalies
+                        
                         sensor_data_buffer.append(data)
                         logging.info(f"Received data: {data}")
+
                 except Exception as e:
                     logging.error(f"Connection error with sensor {addr}: {e}")
                     break
