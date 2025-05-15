@@ -30,17 +30,29 @@ class DroneGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Drone Dashboard")
-
+    
         self.tree = ttk.Treeview(root, columns=("Sensor ID", "Temperature", "Humidity", "Timestamp"), show="headings")
         for col in ("Sensor ID", "Temperature", "Humidity", "Timestamp"):
             self.tree.heading(col, text=col)
         self.tree.pack(fill=tk.BOTH, expand=True)
-
+    
         self.status_label = tk.Label(root, text="Status: Normal", fg="green")
         self.status_label.pack()
-
+    
+        # Batarya ile ilgili değişkenler ve label
+        self.battery_level = 100.0
+        self.returning_to_base = False
+        self.queued_data = []
+    
+        self.battery_label = tk.Label(root, text=f"Battery: {self.battery_level:.1f}%", fg="blue")
+        self.battery_label.pack()
+    
+        # Sunucu ve forward threadleri
         threading.Thread(target=self.start_server, daemon=True).start()
         threading.Thread(target=self.forward_to_central, daemon=True).start()
+    
+        # Batarya tüketim döngüsü thread'i
+        threading.Thread(target=self.battery_drain_loop, daemon=True).start()
 
     def start_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
