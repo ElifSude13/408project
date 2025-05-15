@@ -30,6 +30,7 @@ class ServerGUI:
         self.tree = ttk.Treeview(root, columns=("Sensor ID", "Temperature", "Humidity", "Timestamp"), show="headings")
         for col in ("Sensor ID", "Temperature", "Humidity", "Timestamp"):
             self.tree.heading(col, text=col)
+        self.tree.tag_configure("anomaly", background="lightcoral")
         self.tree.pack(fill=tk.BOTH, expand=True)
 
         # --- Buraya anomalies için label ve listbox ekleniyor ---
@@ -71,7 +72,20 @@ class ServerGUI:
                     break
 
     def update_gui(self, data):
-        self.tree.insert("", tk.END, values=(data["sensor_id"], data["temperature"], data["humidity"], data["timestamp"]))
+        tag = "anomaly" if "anomaly" in data else ""
+
+        self.tree.insert("", tk.END, values=(
+            data.get("sensor_id", ""),
+            data.get("temperature", ""),
+            data.get("humidity", ""),
+            data.get("timestamp", "")
+        ), tags=(tag,))
+
+        if "anomaly" in data:
+            for a in data["anomaly"]:
+                msg = f"[ANOMALY] {data['sensor_id']} - {a}"
+                self.anomaly_listbox.insert(tk.END, msg)
+                logging.warning(msg)
 
 if __name__ == "__main__":
     root = tk.Tk()
