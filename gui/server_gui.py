@@ -22,14 +22,23 @@ console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
 class ServerGUI:
-    def __init__(self, root):
+     def __init__(self, root):
         self.root = root
         self.root.title("Central Server Dashboard")
 
+        # --- Mevcut Treeview ---
         self.tree = ttk.Treeview(root, columns=("Sensor ID", "Temperature", "Humidity", "Timestamp"), show="headings")
         for col in ("Sensor ID", "Temperature", "Humidity", "Timestamp"):
             self.tree.heading(col, text=col)
         self.tree.pack(fill=tk.BOTH, expand=True)
+
+        # --- Buraya anomalies için label ve listbox ekleniyor ---
+        self.anomaly_label = tk.Label(root, text="Anomalies", fg="darkred")
+        self.anomaly_label.pack(pady=(10, 0))      # biraz üstten boşluk
+
+        self.anomaly_listbox = tk.Listbox(root, height=6)
+        self.anomaly_listbox.pack(fill=tk.BOTH, expand=True)
+        # -----------------------------------------------
 
         threading.Thread(target=self.start_server, daemon=True).start()
 
